@@ -1,6 +1,6 @@
 ﻿# Student Management V1.0
 ## 提前声明
-V1.0 是跟着B站UP主“编程小鱼酱”的教程敲的，我是个Qt初学者，这里附上连接：[Qt学生管理系统完结篇](【Qt学生管理系统完结篇】https://www.bilibili.com/video/BV1Uq4y1y78K?vd_source=c406bcecd8ddc6005c47d746061135a9);
+V1.0 是跟着B站UP主“编程小鱼酱”的教程敲的，我是个Qt初学者，这里附上连接：[Qt学生管理系统完结篇][【Qt学生管理系统完结篇】https://www.bilibili.com/video/BV1Uq4y1y78K?vd_source=c406bcecd8ddc6005c47d746061135a9];
 
 ## 缺点
   这个项目还有很多不足，因为这个教学视频的目的也只是带我们入门，我觉得这个项目还能再完善完善，也以此提高自己的能力。
