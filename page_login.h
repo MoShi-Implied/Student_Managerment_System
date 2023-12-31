@@ -2,6 +2,7 @@
 #define PAGE_LOGIN_H
 
 #include <QWidget>
+#include "stusql.h"
 
 namespace Ui {
 class Page_Login;
@@ -22,9 +23,14 @@ private slots:
 
 signals:
     void sendLoginSuccess();
+    // 发送登陆人员信息
+    void sendInfo(UserInfo info);
 
 private:
     Ui::Page_Login *ui;
+
+    // 存储用户信息
+    UserInfo userinfo;
 };
 
 #endif // PAGE_LOGIN_H

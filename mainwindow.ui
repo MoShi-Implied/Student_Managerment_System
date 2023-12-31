@@ -163,7 +163,7 @@ color: white;</string>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_3">
+           <widget class="QLabel" name="show_username">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -183,7 +183,7 @@ color: white;</string>
              <string notr="true">font: 15pt &quot;楷体&quot;;</string>
             </property>
             <property name="text">
-             <string>admin</string>
+             <string>text</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>

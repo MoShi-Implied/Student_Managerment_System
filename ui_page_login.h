@@ -27,10 +27,10 @@ public:
     QGridLayout *gridLayout_2;
     QWidget *widget_2;
     QGridLayout *gridLayout;
-    QLineEdit *lineEdit;
+    QLineEdit *le_username;
     QLabel *label_2;
     QLabel *label_3;
-    QLineEdit *lineEdit_2;
+    QLineEdit *le_password;
     QWidget *widget;
     QHBoxLayout *horizontalLayout;
     QPushButton *btn_login;
@@ -56,15 +56,15 @@ public:
         widget_2->setFont(font);
         gridLayout = new QGridLayout(widget_2);
         gridLayout->setObjectName("gridLayout");
-        lineEdit = new QLineEdit(widget_2);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setStyleSheet(QString::fromUtf8("    border : 2px solid #bdc3c7;\n"
+        le_username = new QLineEdit(widget_2);
+        le_username->setObjectName("le_username");
+        le_username->setStyleSheet(QString::fromUtf8("    border : 2px solid #bdc3c7;\n"
 "    min-height: 22;\n"
 "    border-radius: 6;"));
-        lineEdit->setMaxLength(8);
-        lineEdit->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        le_username->setMaxLength(8);
+        le_username->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
-        gridLayout->addWidget(lineEdit, 0, 1, 1, 1);
+        gridLayout->addWidget(le_username, 0, 1, 1, 1);
 
         label_2 = new QLabel(widget_2);
         label_2->setObjectName("label_2");
@@ -78,15 +78,15 @@ public:
 
         gridLayout->addWidget(label_3, 1, 0, 1, 1);
 
-        lineEdit_2 = new QLineEdit(widget_2);
-        lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setStyleSheet(QString::fromUtf8("    border : 2px solid #bdc3c7;\n"
+        le_password = new QLineEdit(widget_2);
+        le_password->setObjectName("le_password");
+        le_password->setStyleSheet(QString::fromUtf8("    border : 2px solid #bdc3c7;\n"
 "    min-height: 22;\n"
 "    border-radius: 6;"));
-        lineEdit_2->setMaxLength(20);
-        lineEdit_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        le_password->setMaxLength(20);
+        le_password->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
-        gridLayout->addWidget(lineEdit_2, 1, 1, 1, 1);
+        gridLayout->addWidget(le_password, 1, 1, 1, 1);
 
 
         gridLayout_2->addWidget(widget_2, 1, 0, 1, 1);
@@ -164,10 +164,10 @@ public:
     void retranslateUi(QWidget *Page_Login)
     {
         Page_Login->setWindowTitle(QCoreApplication::translate("Page_Login", "\347\231\273\345\275\225", nullptr));
-        lineEdit->setPlaceholderText(QCoreApplication::translate("Page_Login", "\350\257\267\350\276\223\345\205\245", nullptr));
+        le_username->setPlaceholderText(QCoreApplication::translate("Page_Login", "\350\257\267\350\276\223\345\205\245", nullptr));
         label_2->setText(QCoreApplication::translate("Page_Login", "\347\224\250\346\210\267\345\220\215", nullptr));
         label_3->setText(QCoreApplication::translate("Page_Login", "\345\257\206\347\240\201", nullptr));
-        lineEdit_2->setPlaceholderText(QCoreApplication::translate("Page_Login", "\350\257\267\350\276\223\345\205\245", nullptr));
+        le_password->setPlaceholderText(QCoreApplication::translate("Page_Login", "\350\257\267\350\276\223\345\205\245", nullptr));
         btn_login->setText(QCoreApplication::translate("Page_Login", "\347\231\273\345\275\225", nullptr));
         btn_exit->setText(QCoreApplication::translate("Page_Login", "\351\200\200\345\207\272", nullptr));
         label->setText(QCoreApplication::translate("Page_Login", "\345\255\246\347\224\237\344\277\241\346\201\257\347\256\241\347\220\206\347\263\273\347\273\237", nullptr));

@@ -7,6 +7,7 @@
 #include <QString>
 #include <QDialog>
 #include <QMessageBox>
+#include "stusql.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -23,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     };
     connect(&m_dlgLogin, &Page_Login::sendLoginSuccess, this, f);
 
+    connect(&m_dlgLogin, &Page_Login::sendInfo, this, &MainWindow::acceptInfo);
 
     // 设置列数
     ui->treeWidget->setColumnCount(1);
@@ -57,6 +59,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     updateTable();
 
+
+    // show_name进行设置
 
     // 将回车和搜索键绑定
     connect(ui->le_search, SIGNAL(returnPressed()), ui->btn_search, SLOT(click()), Qt::UniqueConnection);
@@ -206,5 +210,13 @@ void MainWindow::on_btn_search_clicked()
         index++;
     }
     ui->tableWidget->setRowCount(index);
+}
+
+void MainWindow::acceptInfo(UserInfo info)
+{
+    this->userinfo = info;
+
+    // 接收到信号后，对文本进行设置
+    ui->show_username->setText(this->userinfo.username);
 }
 

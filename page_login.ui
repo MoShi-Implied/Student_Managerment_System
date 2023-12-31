@@ -39,7 +39,7 @@
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="le_username">
         <property name="styleSheet">
          <string notr="true">    border : 2px solid #bdc3c7;
     min-height: 22;
@@ -77,7 +77,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="le_password">
         <property name="styleSheet">
          <string notr="true">    border : 2px solid #bdc3c7;
     min-height: 22;

@@ -44,7 +44,7 @@ public:
     QWidget *widget_2;
     QHBoxLayout *horizontalLayout;
     QLabel *label_2;
-    QLabel *label_3;
+    QLabel *show_username;
     QPushButton *pushButton;
     QTreeWidget *treeWidget;
     QStackedWidget *stackedWidget;
@@ -126,15 +126,15 @@ public:
 
         horizontalLayout->addWidget(label_2);
 
-        label_3 = new QLabel(widget_2);
-        label_3->setObjectName("label_3");
-        label_3->setEnabled(true);
-        label_3->setMinimumSize(QSize(70, 0));
-        label_3->setMaximumSize(QSize(70, 16777215));
-        label_3->setStyleSheet(QString::fromUtf8("font: 15pt \"\346\245\267\344\275\223\";"));
-        label_3->setAlignment(Qt::AlignCenter);
+        show_username = new QLabel(widget_2);
+        show_username->setObjectName("show_username");
+        show_username->setEnabled(true);
+        show_username->setMinimumSize(QSize(70, 0));
+        show_username->setMaximumSize(QSize(70, 16777215));
+        show_username->setStyleSheet(QString::fromUtf8("font: 15pt \"\346\245\267\344\275\223\";"));
+        show_username->setAlignment(Qt::AlignCenter);
 
-        horizontalLayout->addWidget(label_3);
+        horizontalLayout->addWidget(show_username);
 
         pushButton = new QPushButton(widget_2);
         pushButton->setObjectName("pushButton");
@@ -287,7 +287,7 @@ public:
 #endif // QT_CONFIG(tooltip)
         label->setText(QCoreApplication::translate("MainWindow", "\345\255\246\347\224\237\344\277\241\346\201\257\347\256\241\347\220\206\347\263\273\347\273\237", nullptr));
         label_2->setText(QString());
-        label_3->setText(QCoreApplication::translate("MainWindow", "admin", nullptr));
+        show_username->setText(QCoreApplication::translate("MainWindow", "text", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272", nullptr));
         pushButton->setProperty("btn", QVariant(QCoreApplication::translate("MainWindow", "main", nullptr)));
         btn_update->setText(QCoreApplication::translate("MainWindow", "\344\277\256\346\224\271", nullptr));

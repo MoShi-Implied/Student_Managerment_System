@@ -32,12 +32,21 @@ private slots:
     void on_btn_update_clicked();
     void on_btn_search_clicked();
 
+public slots:
+    // 接收登录页传来的信号
+    void acceptInfo(UserInfo info);
+
 private:
     void updateTable();
 
     Ui::MainWindow *ui;
+    // 登录页
     Page_Login m_dlgLogin;
+
     StuSql* m_ptrStuSql;
+
+    // 登录人信息
+    UserInfo userinfo;
 
     // 为什么这里不是指针类型？
     Dlg_AddStu m_dlgAddStu;

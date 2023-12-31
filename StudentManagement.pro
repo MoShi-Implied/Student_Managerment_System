@@ -14,13 +14,13 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     page_login.cpp \
-    stusql.cpp
+    stusql.cpp \
 
 HEADERS += \
     dlg_addstu.h \
     mainwindow.h \
     page_login.h \
-    stusql.h
+    stusql.h \
 
 FORMS += \
     dlg_addstu.ui \

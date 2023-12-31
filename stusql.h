@@ -30,6 +30,7 @@ public:
     explicit StuSql(QObject *parent = nullptr);
 
     static StuSql* ptrstuSql;
+
     static StuSql* getinstance(){
         // if语句小技巧，避免写出出现访问空指针
         if(nullptr == ptrstuSql){
@@ -76,6 +77,7 @@ public:
 signals:
 
 private:
+    // 使用单例模式设计
     QSqlDatabase m_db;
 };
 
